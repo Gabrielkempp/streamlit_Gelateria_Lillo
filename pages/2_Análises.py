@@ -26,6 +26,7 @@ fig2 = px.pie(clientes, names='genero', title='Distribuição por Gênero')
 col3.plotly_chart(fig2)
 
 # Visão geral gráfico 3
+col4.subheader(' ')
 col4.subheader('Visão Geral')
 col4.write("""Embora esteja um pouco equilibrado, os perfis de genero masculino tendem a ser maior que o feminino em quantidade.\n\n
 **Homens: 57,2%**\n
