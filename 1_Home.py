@@ -49,7 +49,7 @@ if st.checkbox("Visualizar dados brutos"):
     col3, col4 = st.columns(2)
     col3.subheader('Portfólio de Ofertas')
     col3.write(portfolio)
-    col4.subheader('Ofertas que sao enviadas')
+    col4.subheader('Ofertas que são enviadas')
     col4.markdown(
         '''· **Recompensa**: pontuação obtida por completar a compra da oferta\n
 · **Canal**: canal de envio da comunicação podendo ser e-mail, web, celular e redes sociais.\n
@@ -62,7 +62,7 @@ if st.checkbox("Visualizar dados brutos"):
     col5, col6 = st.columns(2)
     col5.subheader('Eventos de Ofertas')
     col5.write(eventos)
-    col6.subheader('Ofertas que sao enviadas')
+    col6.subheader('Base com registros de todos os eventos')
     col6.markdown('''· **Tipo evento**: descrição dos eventos ocorridos, podendo ser: transação, oferta recebida, oferta vista, oferta finalizada.\n
 · **Cliente**: código do cliente que executou aquele evento\n
 · **Tempo decorrido**: tempo em horas desde o envio da oferta\n

@@ -13,20 +13,20 @@ st.title('Análise')
 
 # Gráfico 1
 col1, col2 = st.columns(2)
-fig1 = px.histogram(clientes, x='idade', nbins=20, title='Qauntidade de clientes por idade')
+fig1 = px.histogram(clientes, x='idade', nbins=20, title='Quantidade de clientes por idade')
 col1.plotly_chart(fig1)
 
 # Gráfico 2
-fig3 = px.histogram(clientes, x='renda_anual', nbins=20, title='Distribuição de Renda Anual')
+fig3 = px.histogram(clientes, x='renda_anual', nbins=20, title='Distribuição de Renda(Anual)')
 col2.plotly_chart(fig3)
 
 # Gráfico 3
-col3, col4 = st.columns(2)
+col3, col4 = st.columns([0.7,0.3])
 fig2 = px.pie(clientes, names='genero', title='Distribuição por Gênero')
 col3.plotly_chart(fig2)
 
 # Visão geral gráfico 3
-col4.subheader('Visão Geral sobre Generos')
+col4.subheader('Visão Geral')
 col4.write("""Embora esteja um pouco equilibrado, os perfis de genero masculino tendem a ser maior que o feminino em quantidade.\n\n
 **Homens: 57,2%**\n
 **Mulheres: 41,3%**\n\n
