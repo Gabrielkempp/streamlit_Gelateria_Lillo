@@ -20,6 +20,8 @@ col1.plotly_chart(fig1)
 fig3 = px.histogram(clientes, x='renda_anual', nbins=20, title='Distribuição de Renda(Anual)')
 col2.plotly_chart(fig3)
 
+st.divider()
+
 # Gráfico 3
 col3, col4 = st.columns([0.7,0.3])
 fig2 = px.pie(clientes, names='genero', title='Distribuição por Gênero')
