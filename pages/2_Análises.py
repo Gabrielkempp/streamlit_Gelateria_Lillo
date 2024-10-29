@@ -35,6 +35,8 @@ col4.write("""Embora esteja um pouco equilibrado, os perfis de genero masculino 
 **Mulheres: 41,3%**\n\n
 O equilíbrio entre os gêneros oferece oportunidades de segmentação direcionada para campanhas de marketing mais personalizadas.""")
 
+st.divider()
+
 #Grafico 4
 col5, col6 = st.columns([0.7,0.3])
 # Filtra os eventos de transação
@@ -50,6 +52,9 @@ fig = px.bar(gasto_por_genero_idade, x='idade', y='valor', color='genero', barmo
              title='Valor Gasto por Gênero e Idade', 
              labels={'valor': 'Valor Gasto', 'idade': 'Idade', 'genero': 'Gênero'})
 col5.plotly_chart(fig)
+
+st.divider()
+
 col6.subheader(' ')
 col6.subheader('Visão Geral')
 col6.write("""A análise revelou uma predominância de clientes do gênero masculino até 47 anos e, a partir desta idade, as mulheres passam a ser a maioria em muitas das faixas etárias.""")
