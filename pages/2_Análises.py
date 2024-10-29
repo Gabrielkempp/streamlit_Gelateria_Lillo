@@ -53,8 +53,6 @@ fig = px.bar(gasto_por_genero_idade, x='idade', y='valor', color='genero', barmo
              labels={'valor': 'Valor Gasto', 'idade': 'Idade', 'genero': 'Gênero'})
 col5.plotly_chart(fig)
 
-st.divider()
-
 col6.subheader(' ')
 col6.subheader('Visão Geral')
 col6.write("""A análise revelou uma predominância de clientes do gênero masculino até 47 anos e, a partir desta idade, as mulheres passam a ser a maioria em muitas das faixas etárias.""")
