@@ -45,6 +45,8 @@ if st.checkbox("Visualizar dados brutos"):
 · **Id**: código único de cada cliente\n
 · **Membro desde**: data em que o cliente criou uma conta\n
 · **Renda anual**: renda anual fornecida pelo cliente.''')
+    
+    st.divider()
 
     col3, col4 = st.columns(2)
     col3.subheader('Portfólio de Ofertas')
@@ -58,6 +60,8 @@ if st.checkbox("Visualizar dados brutos"):
 · **Oferta**: Tipo de oferta enviada, podendo ser informativo, desconto e compre 1 e leve 2.\n
 · **ID**: código de identificação da oferta
 ''')
+    
+    st.divider()
     
     col5, col6 = st.columns(2)
     col5.subheader('Eventos de Ofertas')
